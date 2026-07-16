@@ -1,65 +1,89 @@
 # Changelog
 
-## [0.3.0a2](https://github.com/thalovant/hivemind-sqlite-database/tree/0.3.0a2) (2026-07-13)
+## [0.4.0a6](https://github.com/JarbasHiveMind/hivemind-sqlite-database/tree/0.4.0a6) (2026-07-16)
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.3.0a1...0.3.0a2)
+[Full Changelog](https://github.com/JarbasHiveMind/hivemind-sqlite-database/compare/0.4.0a5...0.4.0a6)
 
 **Merged pull requests:**
 
-- Harden organization security controls [\#2](https://github.com/thalovant/hivemind-sqlite-database/pull/2) ([goldyfruit](https://github.com/goldyfruit))
-- Preserve client metadata [\#1](https://github.com/thalovant/hivemind-sqlite-database/pull/1) ([goldyfruit](https://github.com/goldyfruit))
+- Revert unauthorized automated merges \(\#44, \#45\) [\#47](https://github.com/JarbasHiveMind/hivemind-sqlite-database/pull/47) ([JarbasAl](https://github.com/JarbasAl))
 
-## [0.3.0a1](https://github.com/thalovant/hivemind-sqlite-database/tree/0.3.0a1) (2026-04-15)
+## [0.4.0a5](https://github.com/JarbasHiveMind/hivemind-sqlite-database/tree/0.4.0a5) (2026-07-16)
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.2.1...0.3.0a1)
+[Full Changelog](https://github.com/JarbasHiveMind/hivemind-sqlite-database/compare/0.4.0a4...0.4.0a5)
 
-## [0.2.1](https://github.com/thalovant/hivemind-sqlite-database/tree/0.2.1) (2026-04-15)
+**Merged pull requests:**
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.2.1a4...0.2.1)
+- ci: release safely after fork merges [\#45](https://github.com/JarbasHiveMind/hivemind-sqlite-database/pull/45) ([goldyfruit](https://github.com/goldyfruit))
+- fix: advance last\_seen atomically [\#44](https://github.com/JarbasHiveMind/hivemind-sqlite-database/pull/44) ([goldyfruit](https://github.com/goldyfruit))
 
-## [0.2.1a4](https://github.com/thalovant/hivemind-sqlite-database/tree/0.2.1a4) (2026-04-15)
+## [0.4.0a4](https://github.com/JarbasHiveMind/hivemind-sqlite-database/tree/0.4.0a4) (2026-07-04)
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.2.1a3...0.2.1a4)
+[Full Changelog](https://github.com/JarbasHiveMind/hivemind-sqlite-database/compare/0.4.0a3...0.4.0a4)
 
-## [0.2.1a3](https://github.com/thalovant/hivemind-sqlite-database/tree/0.2.1a3) (2026-04-15)
+**Merged pull requests:**
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.2.1a2...0.2.1a3)
+- Update actions/checkout action to v7 [\#40](https://github.com/JarbasHiveMind/hivemind-sqlite-database/pull/40) ([renovate[bot]](https://github.com/apps/renovate))
 
-## [0.2.1a2](https://github.com/thalovant/hivemind-sqlite-database/tree/0.2.1a2) (2026-04-15)
+## [0.4.0a3](https://github.com/JarbasHiveMind/hivemind-sqlite-database/tree/0.4.0a3) (2026-07-04)
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.2.1a1...0.2.1a2)
+[Full Changelog](https://github.com/JarbasHiveMind/hivemind-sqlite-database/compare/0.4.0a2...0.4.0a3)
 
-## [0.2.1a1](https://github.com/thalovant/hivemind-sqlite-database/tree/0.2.1a1) (2026-04-15)
+**Merged pull requests:**
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.2.0a1...0.2.1a1)
+- test: hivescope e2e + CI [\#41](https://github.com/JarbasHiveMind/hivemind-sqlite-database/pull/41) ([JarbasAl](https://github.com/JarbasAl))
 
-## [0.2.0a1](https://github.com/thalovant/hivemind-sqlite-database/tree/0.2.0a1) (2026-04-15)
+## [0.4.0a2](https://github.com/JarbasHiveMind/hivemind-sqlite-database/tree/0.4.0a2) (2026-06-05)
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.0.4a2...0.2.0a1)
+[Full Changelog](https://github.com/JarbasHiveMind/hivemind-sqlite-database/compare/0.4.0a1...0.4.0a2)
 
-## [0.0.4a2](https://github.com/thalovant/hivemind-sqlite-database/tree/0.0.4a2) (2025-12-19)
+**Merged pull requests:**
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.0.4a1...0.0.4a2)
+- docs: zero-to-hero README and /docs coverage [\#38](https://github.com/JarbasHiveMind/hivemind-sqlite-database/pull/38) ([JarbasAl](https://github.com/JarbasAl))
 
-## [0.0.4a1](https://github.com/thalovant/hivemind-sqlite-database/tree/0.0.4a1) (2025-12-18)
+## [0.4.0a1](https://github.com/JarbasHiveMind/hivemind-sqlite-database/tree/0.4.0a1) (2026-06-05)
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.0.3...0.0.4a1)
+[Full Changelog](https://github.com/JarbasHiveMind/hivemind-sqlite-database/compare/0.3.0a4...0.4.0a1)
 
-## [0.0.3](https://github.com/thalovant/hivemind-sqlite-database/tree/0.0.3) (2024-12-29)
+**Merged pull requests:**
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.0.3a1...0.0.3)
+- feat\(db\): schema v2 migration — fold legacy blacklist columns into metadata [\#32](https://github.com/JarbasHiveMind/hivemind-sqlite-database/pull/32) ([JarbasAl](https://github.com/JarbasAl))
 
-## [0.0.3a1](https://github.com/thalovant/hivemind-sqlite-database/tree/0.0.3a1) (2024-12-29)
+## [0.3.0a4](https://github.com/JarbasHiveMind/hivemind-sqlite-database/tree/0.3.0a4) (2026-06-05)
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.0.2a1...0.0.3a1)
+[Full Changelog](https://github.com/JarbasHiveMind/hivemind-sqlite-database/compare/0.3.0a3...0.3.0a4)
 
-## [0.0.2a1](https://github.com/thalovant/hivemind-sqlite-database/tree/0.0.2a1) (2024-12-29)
+**Merged pull requests:**
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/0.0.1...0.0.2a1)
+- ci: dedupe tests.yml — drop test-plain, rename to cipher-tests.yml [\#34](https://github.com/JarbasHiveMind/hivemind-sqlite-database/pull/34) ([JarbasAl](https://github.com/JarbasAl))
 
-## [0.0.1](https://github.com/thalovant/hivemind-sqlite-database/tree/0.0.1) (2024-12-28)
+## [0.3.0a3](https://github.com/JarbasHiveMind/hivemind-sqlite-database/tree/0.3.0a3) (2026-05-20)
 
-[Full Changelog](https://github.com/thalovant/hivemind-sqlite-database/compare/daef65cc35cbbd0492dc346a44c4faae577f4074...0.0.1)
+[Full Changelog](https://github.com/JarbasHiveMind/hivemind-sqlite-database/compare/0.3.0a2...0.3.0a3)
+
+**Merged pull requests:**
+
+- ci: pass PYPI\_TOKEN explicitly, drop secrets:inherit elsewhere [\#33](https://github.com/JarbasHiveMind/hivemind-sqlite-database/pull/33) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.3.0a2](https://github.com/JarbasHiveMind/hivemind-sqlite-database/tree/0.3.0a2) (2026-05-18)
+
+[Full Changelog](https://github.com/JarbasHiveMind/hivemind-sqlite-database/compare/0.3.0a1...0.3.0a2)
+
+**Closed issues:**
+
+- security: encrypted db [\#2](https://github.com/JarbasHiveMind/hivemind-sqlite-database/issues/2)
+
+**Merged pull requests:**
+
+- Preserve client metadata \(supersedes \#29\) [\#30](https://github.com/JarbasHiveMind/hivemind-sqlite-database/pull/30) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.3.0a1](https://github.com/JarbasHiveMind/hivemind-sqlite-database/tree/0.3.0a1) (2026-04-15)
+
+[Full Changelog](https://github.com/JarbasHiveMind/hivemind-sqlite-database/compare/0.2.1...0.3.0a1)
+
+**Merged pull requests:**
+
+- feat: add SQLCipher encryption support \(password kwarg\) [\#24](https://github.com/JarbasHiveMind/hivemind-sqlite-database/pull/24) ([JarbasAl](https://github.com/JarbasAl))
 
 
 

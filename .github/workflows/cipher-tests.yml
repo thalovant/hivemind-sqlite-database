@@ -1,0 +1,32 @@
+name: Cipher Tests
+
+permissions:
+  contents: read
+
+# Dedicated workflow for the [cipher] extra (sqlcipher3 + libsqlcipher-dev).
+# The shared build-tests.yml covers the unencrypted path on Python 3.10-3.14;
+# this one adds a single Python 3.11 run with sqlcipher installed so the
+# encrypted backend is exercised on every PR.
+
+on:
+  pull_request:
+    branches: [dev, master, main]
+  workflow_dispatch:
+
+jobs:
+  test-cipher:
+    name: "SQLite + SQLCipher"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.11"
+      - name: Install sqlcipher system library
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libsqlcipher-dev
+      - run: pip install -e ".[cipher]"
+      # schema-v2 features (migrate, refresh, _check_forward_compat) ship in the 0.6.0a1 prerelease
+      - run: pip install "hivemind-plugin-manager==0.6.0a1" pytest
+      - run: pytest tests/test_sqlitedb.py -q -p no:ovoscope
