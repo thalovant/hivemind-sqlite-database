@@ -1,5 +1,8 @@
 name: Cipher Tests
 
+permissions:
+  contents: read
+
 # Dedicated workflow for the [cipher] extra (sqlcipher3 + libsqlcipher-dev).
 # The shared build-tests.yml covers the unencrypted path on Python 3.10-3.14;
 # this one adds a single Python 3.11 run with sqlcipher installed so the
@@ -15,8 +18,8 @@ jobs:
     name: "SQLite + SQLCipher"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.11"
       - name: Install sqlcipher system library

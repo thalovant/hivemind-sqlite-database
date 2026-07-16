@@ -843,10 +843,8 @@ class TestSQLiteDBSchemaV2RoundTrip(unittest.TestCase):
         self.assertEqual(found[0].allowed_types, ["recognizer_loop:utterance"])
 
     def test_refresh_returns_v2_fields(self):
-        db = make_db()
         import unittest.mock as mock
         import tempfile
-        import os
         with tempfile.TemporaryDirectory() as tmp:
             with mock.patch("hivemind_sqlite_database.xdg_data_home",
                             return_value=tmp):
