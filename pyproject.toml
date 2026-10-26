@@ -25,8 +25,11 @@ dependencies = [
 cipher = ["sqlcipher3"]
 test = [
     "pytest",
-    "hivescope>=0.5.2a1",
-    "hivemind-plugin-manager>=0.7.1a1,<0.9",
+    # Match the existing policy-E2E stack and its legacy connection constructor.
+    "hivescope==0.4.0a2",
+    "hivemind-core==4.3.0a2",
+    "hivemind-ovos-agent-plugin==0.2.0a1",
+    "hivemind-plugin-manager==0.6.0a1",
 ]
 
 [project.urls]

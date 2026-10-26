@@ -59,3 +59,20 @@ def test_legacy_client_api_bounds_are_explicit() -> None:
         assert not item.specifier.contains("0.9.0a1", prereleases=True)
         assert not item.specifier.contains("0.10.0a1", prereleases=True)
 
+
+def test_topology_extra_uses_the_existing_policy_e2e_stack() -> None:
+    """Keep the complete legacy topology suite on its supported constructor API."""
+    requirements = [
+        Requirement(value)
+        for value in metadata("hivemind-sqlite-database").get_all("Requires-Dist", [])
+    ]
+    test_requirements = {
+        item.name: str(item.specifier)
+        for item in requirements
+        if item.marker is not None and item.marker.evaluate({"extra": "test"})
+    }
+    assert test_requirements["hivescope"] == "==0.4.0a2"
+    assert test_requirements["hivemind-core"] == "==4.3.0a2"
+    assert test_requirements["hivemind-ovos-agent-plugin"] == "==0.2.0a1"
+    assert test_requirements["hivemind-plugin-manager"] == "==0.6.0a1"
+

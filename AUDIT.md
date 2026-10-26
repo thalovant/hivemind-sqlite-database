@@ -2,9 +2,15 @@
 
 The security constraint is carried by the real installer, not solely by a
 scanner input. [Dependency tests](tests/test_dependency_security.py) verify
-exact filelock selection and lock behavior. 67 passed, 3 skipped (SQLCipher unavailable; e2e excluded).
+exact filelock selection and lock behavior. Full test extras pass 70 tests,
+including topology tests, with 3 local SQLCipher skips. Hosted cipher checks
+remain enabled. The test extra matches the existing policy-E2E workflow.
 
-Python >=3.10 is required by filelock3.20.3; Python 3.9 is not supported. The supported bus client requires bitstring>=4.1.1,<5. Schema-v2 Client compatibility requires plugin-manager>=0.6.0a1,<0.9; test extras retain >=0.7.1a1 with the same upper bound. SQLite behavior and schema remain unchanged.
+Python >=3.10 is required by filelock3.20.3; Python 3.9 is not supported.
+The supported bus client requires bitstring>=4.1.1,<5. Schema-v2 Client
+compatibility requires plugin-manager>=0.6.0a1,<0.9. Test extras match the
+existing policy-E2E workflow: hivescope0.4.0a2, core4.3.0a2, agent0.2.0a1 and
+manager0.6.0a1. SQLite behavior and schema remain unchanged.
 
 SQLiteDB in [the runtime source](hivemind_sqlite_database/__init__.py) is not modified.
 This is not a complete audit of that implementation. Future advisory checks

@@ -14,7 +14,11 @@ The newer HIGH [GHSA-v4x8-3wr5-3wq8](https://github.com/advisories/GHSA-v4x8-3wr
 affects `>=3.20.4,<=4.2.0`; the other five published ranges begin at 3.20.4,
 3.22.0, or 4.1.0. Exact 3.20.3 lies outside all eight ranges.
 
-Python >=3.10 is required by filelock3.20.3; Python 3.9 is not supported. The supported bus client requires bitstring>=4.1.1,<5. Schema-v2 Client compatibility requires plugin-manager>=0.6.0a1,<0.9; test extras retain >=0.7.1a1 with the same upper bound. SQLite behavior and schema remain unchanged.
+Python >=3.10 is required by filelock3.20.3; Python 3.9 is not supported.
+The supported bus client requires bitstring>=4.1.1,<5. Schema-v2 Client
+compatibility requires plugin-manager>=0.6.0a1,<0.9. Test extras match the
+existing policy-E2E workflow: hivescope0.4.0a2, core4.3.0a2, agent0.2.0a1 and
+manager0.6.0a1. SQLite behavior and schema remain unchanged.
 
 This is a legacy-fork compatibility boundary, not a platform-wide downgrade.
 `SQLiteDB.add_item` and `SQLiteDB._row_to_client` require `Client.crypto_key`,
@@ -26,7 +30,10 @@ external consumer inventory is claimed to have been exhaustively checked.
 
 ## Verification
 
-- 67 passed, 3 skipped against manager0.6.0a1 and the supported upper endpoint
+- Full test extras: 70 passed, 3 skipped, including topology tests. Only the
+  unavailable local SQLCipher integration is skipped; hosted SQLCipher tests
+  remain enabled. Test-stack metadata is asserted by a regression test.
+- Unit endpoint checks: 67 passed, 3 skipped against manager0.6.0a1 and the supported upper endpoint
   0.8.0a3 (SQLCipher unavailable locally; e2e excluded).
 - A clean resolver dry-run rejects co-installation with the modern quota plugin
   because its manager>=0.10 requirement conflicts with this real metadata bound.
